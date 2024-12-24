@@ -35,6 +35,7 @@ public class StepDefs {
 
         String actualSuccessMessage = practicePage.successMessage.getText();
         Assert.assertTrue(actualSuccessMessage.contains(expectedSuccessMessage));
+        System.out.println(" Webhook trigger ");
     }
 
     @Then("I should see page title as {string}")
